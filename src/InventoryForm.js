@@ -25,7 +25,7 @@ const FormSection = styled.div`
 
 const Input = styled.input`
   padding: 8px 8px;
-  min-width: 400px;
+  width: 100%;
 `;
 
 export default function InventoryForm({

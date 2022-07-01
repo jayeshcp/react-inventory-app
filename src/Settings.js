@@ -1,11 +1,10 @@
 import React from 'react';
-import './style.css';
+import Page from './components/Page';
 
 export default function Settings() {
   return (
-    <div>
-      <h3>Settings</h3>
-      <div></div>
-    </div>
+    <Page header="Settings">
+      <p>Settings will go here</p>
+    </Page>
   );
 }

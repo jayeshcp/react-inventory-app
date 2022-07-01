@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './style.css';
 import { useInventoryStore } from './store';
 import InventoryForm from './InventoryForm';
+import Page from './components/Page';
 
 export default function CreateEditInventoryContainer() {
   const { items, insertOrUpdate } = useInventoryStore();
@@ -27,9 +28,7 @@ export default function CreateEditInventoryContainer() {
   };
 
   return (
-    <div>
-      <h4>{action === 'create' ? 'Add new' : 'Edit'}</h4>
-
+    <Page header={action === 'create' ? 'Add new' : 'Edit'}>
       <InventoryForm
         title={title}
         description={description}
@@ -37,6 +36,6 @@ export default function CreateEditInventoryContainer() {
         onSaveClicked={saveItem}
         onCancelClicked={cancel}
       />
-    </div>
+    </Page>
   );
 }

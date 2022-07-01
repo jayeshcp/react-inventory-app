@@ -8,6 +8,11 @@ import CreateEditInventory from './CreateEditInventory';
 import About from './About';
 import Settings from './Settings';
 
+const Wrapper = styled.div`
+  margin: 20px;
+  padding: 12px 18px;
+`;
+
 const NavBlock = styled.div`
   margin-bottom: 12px;
   display: flex;
@@ -22,7 +27,7 @@ const Divider = styled.div`
 
 export default function App() {
   return (
-    <div>
+    <Wrapper>
       <h3>Inventory</h3>
       <NavBlock>
         <Link to="/">Home</Link>
@@ -40,6 +45,6 @@ export default function App() {
           element={<CreateEditInventory />}
         />
       </Routes>
-    </div>
+    </Wrapper>
   );
 }
