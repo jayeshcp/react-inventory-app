@@ -12,7 +12,7 @@ const ButtonBar = styled.div`
 `;
 
 const Wrapper = styled.div`
-  margin-top: 28px;
+  margin-top: 18px;
 `;
 
 const Button = styled.button`
